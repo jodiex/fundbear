@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/DefineUser.css'
+import '../css/DefineUser.css';
 import { Button, Grid } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 
@@ -15,7 +15,7 @@ function DefineUser() {
             <Button content='DONOR' fluid size='big' onClick='' secondary />
           </Link>
           <br />
-          <Link to='login'>
+          <Link to='/login'>
             <Button content='ORGANIZATION' fluid size='big' secondary />
           </Link>
         </Grid.Column>

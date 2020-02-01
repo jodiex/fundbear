@@ -1,22 +1,40 @@
 import React from 'react';
-import '../css/DefineUser.css'
+import '../css/Organization.css';
+import Header from './Header.js';
 import { Button, Grid } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
+import { render } from '@testing-library/react';
 
-function DefineUser() {
+function Organization() {
   const fundbearLogo = 'images/fundbear_logo.png'
+  var columns = this.state.organizations.length() % 3;
+  columns = (columns == 0) ? 3: columns;
+  render() {
+      let cardComponents = this.state.organizations.map((row) => {
+          return (
+              <Grid.Row columns={columns}>
+                  {row.map((item) => {
+                      return (
+                        <Grid.Column>
+                            
+                        </Grid.Column>
+                    )
+                  })}
+              </Grid.Row>
+          )
+      })
+  }
   return (
-    <div className="defineUserContainer">
-      <Grid textAlign='center' verticalAlign='middle' centered='true' style={{ height: '100vh', width:'45vh' }}>
-        <Grid.Column>
-          <img src={fundbearLogo} alt="fundbear logo"></img>
-          <p>Which fundbear are you?</p>
-          <Button content='DONOR' fluid size='big' secondary />
-          <div style={{height: '10px'}}></div>
-          <Button content='ORGANIZATION' fluid size='big' secondary />
-        </Grid.Column>
-      </Grid>
+    <div className="organizationContainer">
+    `<Header/>
+    <div className="grid">
+    <h2>Organizations</h2>
+        <Grid>
+            {cardComponents}
+        </Grid>
+      </div>
     </div>
   );
 }
 
-export default DefineUser;
+export default Organization;

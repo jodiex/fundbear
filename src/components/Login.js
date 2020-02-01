@@ -13,6 +13,7 @@ function Login() {
           <br />
           <Input placeholder='Password' fluid size="big" />
           <br />
+          <Link to='/'
           <Button content='LOG IN' fluid size="big" secondary />
           
         </Grid.Column>
