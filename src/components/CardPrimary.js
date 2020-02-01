@@ -3,7 +3,7 @@ import { Card, Image } from 'semantic-ui-react';
 
 function CardPrimary() {
     return (
-        <Card>
+        <Card style={{height: '290px'}}>
             <Image src='/images/wildfire.jpg'></Image>
             <Card.Content>
                 <Card.Header>Wildfires</Card.Header>
