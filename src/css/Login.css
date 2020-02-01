@@ -1,0 +1,8 @@
+Button {
+    border-radius: 15px !important;
+}
+Button:hover {
+    background-color: grey !important;
+    color: white !important;
+    transition: background-color 0.6s ease !important;
+}

@@ -11,7 +11,7 @@ function DefineUser() {
           <img src={fundbearLogo} alt="fundbear logo"></img>
           <p>Which fundbear are you?</p>
           <Button content='DONOR' fluid size='big' secondary />
-          <div style={{height: '10px'}}></div>
+          <br />
           <Button content='ORGANIZATION' fluid size='big' secondary />
         </Grid.Column>
       </Grid>
