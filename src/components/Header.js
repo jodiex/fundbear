@@ -7,7 +7,10 @@ function Header() {
   const fundbearLogo = 'images/fundbear_logo.png'
   return (
     <div className='headerContainerInternal'>
-      <img src={fundbearLogo} alt="fundbear logo"></img>
+      <Link to='./current-crises'>
+        <img src={fundbearLogo} alt="fundbear logo"></img>
+      </Link>
+      
       <Link to='/'>
         <p>Log Out</p>
       </Link>
