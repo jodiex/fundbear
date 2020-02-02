@@ -1,7 +1,8 @@
 import React from 'react';
 import '../css/Crisis.css';
 import Header from './Header.js';
-import { Button, Grid } from 'semantic-ui-react';
+import CardPrimary from './CardPrimary.js';
+import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { render } from '@testing-library/react';
 
@@ -23,35 +24,47 @@ function Crisis() {
       [{
         "crisisName": "Coronavirus Outbreak",
         "country": "China"
+      },
+      {
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China"
+      },
+      {
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China"
       }]
   ]
-  render() {
-      let cardComponents = crises.map((row) => {
-          let numColumns = row.size();
-          return (
-              <Grid.Row columns={numColumns}>
-                  {row.map((item) => {
-                      return (
+  let cardComponents = crises.map((row) => {
+        return (
+            <Grid.Row columns={3}>
+                {row.map((item) => {
+                    return (
                         <Grid.Column>
-                            
+                            <CardPrimary header={item["crisisName"]} description={item["country"]}/>
                         </Grid.Column>
                     )
-                  })}
-              </Grid.Row>
-          )
-      })
-  }
+                })}
+            </Grid.Row>
+        );
+    });
   return (
-    <div className="organizationContainer">
-    `<Header/>
-    <div className="grid">
-    <h2>Organizations</h2>
+    <div className="crisesContainer">
+    <div className="headerContainer">
+        <Header/>
+    </div>
+    
+    <div className="titleContainer">
+        <h2>Current Crises</h2>
+    </div>
+    
+    <div className="gridContainer">
         <Grid>
             {cardComponents}
         </Grid>
-      </div>
     </div>
+        </div>
+   
   );
 }
 
-export default Organization;
+export default Crisis;

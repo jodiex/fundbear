@@ -4,6 +4,7 @@ import Login from './Login'
 import Organization from './Organization'
 import CardPrimary from './CardPrimary'
 import CardSecondary from './CardSecondary'
+import Crisis from './Crisis'
 import '../css/App.css'
 import {
   BrowserRouter as Router,
@@ -22,6 +23,7 @@ function App() {
           <Route path='/login' component={Login} />
           <Route path='/organization' component={Organization} />
           <Route path='/card' component={CardSecondary} />
+          <Route path='/crisis' component={Crisis} />
 
       
         </Switch>
