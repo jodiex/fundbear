@@ -19,7 +19,7 @@ function ProjectsDonor() {
 //   }
     const projects = [
         [{"_id":{"$oid":"5e36009e1c9d44000084b480"},"projectName":"Clothing for Wildfire Victims","organizationName":"Salvation Army","crisisName":"Australian Wildfire","severity":{"$numberInt":"5"}, "img": "/images/salvation.png"},
-        {"_id":{"$oid":"5e36003a1c9d44000084b47f"},"projectName":"Help Victims of the Wildfires","organizationName":"Givit","crisisName":"Australian Wildfire","severity":{"$numberInt":"5"}, "img": "/images/givit.png"},
+        {"_id":{"$oid":"5e36003a1c9d44000084b47f"},"projectName":"Victims of the Wildfires","organizationName":"Givit","crisisName":"Australian Wildfire","severity":{"$numberInt":"5"}, "img": "/images/givit.png"},
         {"_id":{"$oid":"5e35fe681c9d44000084b47c"},"projectName":"Animal Rescue","organizationName":"World Wildlife Fund (WWF)","crisisName":"Australian Wildfire","severity":{"$numberInt":"5"}, "img": "/images/wwf.png"}],
         [{"_id":{"$oid":"5e36021b1c9d44000084b481"},"projectName":"Medical Aid for Victims","organizationName":"Red Cross","crisisName":"Australian Wildfire","severity":{"$numberInt":"5"}, "img": "/images/redCross.png"}],
     ]
