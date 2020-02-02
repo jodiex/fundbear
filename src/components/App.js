@@ -5,6 +5,8 @@ import Organization from './Organization'
 import CardPrimary from './CardPrimary'
 import CardSecondary from './CardSecondary'
 import Crisis from './Crisis'
+import ModalDonor from './ModalDonor'
+
 import '../css/App.css'
 import {
   BrowserRouter as Router,
@@ -13,6 +15,7 @@ import {
   Link
 } from "react-router-dom";
 import { Button } from 'semantic-ui-react';
+import ItemsDonor from './ItemsDonor';
 
 function App() {
   return (
@@ -24,6 +27,9 @@ function App() {
           <Route path='/organization' component={Organization} />
           <Route path='/card' component={CardSecondary} />
           <Route path='/crisis' component={Crisis} />
+          <Route path='/items-donor' component={ItemsDonor} />
+          <Route path='/items-donor' component={ItemsDonor} />
+          <Route path='/modal-donor' component={ModalDonor} />
 
       
         </Switch>

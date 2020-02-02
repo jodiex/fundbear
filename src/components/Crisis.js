@@ -11,7 +11,8 @@ function Crisis() {
   const crises = [
       [{
           "crisisName": "Australian Wildfire",
-          "country": "Australia"
+          "country": "Australia",
+          "img": ""
       },
       {
         "crisisName": "Hurricane Dorian",
