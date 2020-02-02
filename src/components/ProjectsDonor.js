@@ -6,10 +6,11 @@ import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { render } from '@testing-library/react';
 
-function ProjectsDonor() {
-  const fundbearLogo = 'images/fundbear_logo.png';
+function ProjectsDonor(props) {
+    const fundbearLogo = 'images/fundbear_logo.png';
+    const name = props.name;
     const projects = [] //Michelle
-  let cardComponents = projects.map((row) => {
+    let cardComponents = projects.map((row) => {
         return (
             <Grid.Row columns={3}>
                 {row.map((item) => {
@@ -22,22 +23,22 @@ function ProjectsDonor() {
             </Grid.Row>
         );
     });
-  return (
-    <div className="gridPageContainer">
-      <div className="headerContainer">
-        <Header/>
-      </div>
-      <div className="titleContainer">
-        <h2>Select a project:</h2>
-        <br />
-      </div>
-      <div className="gridContainer">
-        <Grid>
-            {cardComponents}
-        </Grid>
-      </div>
-    </div>
-  );
+    return (
+        <div className="gridPageContainer">
+            <div className="headerContainer">
+                <Header/>
+            </div>
+            <div className="titleContainer">
+                <h2>Select a project:</h2>
+                <br />
+            </div>
+            <div className="gridContainer">
+                <Grid>
+                    {cardComponents}
+                </Grid>
+            </div>
+        </div>
+    );
 }
 
 export default ProjectsDonor;

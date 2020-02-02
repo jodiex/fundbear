@@ -2,24 +2,29 @@ import React from 'react';
 import '../css/CardPrimary.css'
 import { Card, Image } from 'semantic-ui-react';
 
-function CardPrimary(props) {
-    function handleClick(e) {
-        e.preventDefault();
-        console.log('The link was clicked.');
+class CardPrimary extends React.Component {
+    constructor(props){
+        super(props);
     }
-    return (
-        <div className="cardContainer" onClick={handleClick}>
-            <Card style={{height: '270px'}}>
-                <Image src={props.img}></Image>
-                <Card.Content>
-                    <Card.Header>{props.header}</Card.Header>
-                    <Card.Description>
-                        {props.description}
-                    </Card.Description>
-                </Card.Content>          
-            </Card>
-        </div>
-    );
+    handleClick(e) {
+        e.preventDefault();
+        this.props.callBack(this.props.header);
+    }
+    render(){
+        return (
+            <div className="cardContainer" onClick={this.handleClick.bind(this)}>
+                <Card style={{height: '270px'}}>
+                    <Image src={this.props.img}></Image>
+                    <Card.Content>
+                        <Card.Header>{this.props.header}</Card.Header>
+                        <Card.Description>
+                            {this.props.description}
+                        </Card.Description>
+                    </Card.Content>          
+                </Card>
+            </div>
+        );
+    }
 }
 
 export default CardPrimary;
