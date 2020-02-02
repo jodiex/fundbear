@@ -7,21 +7,6 @@ import { Link } from "react-router-dom";
 function Login() {
   const fundbearLogo = 'images/fundbear_logo.png'
   return (
-<<<<<<< HEAD
-    <div className="defineUserContainer">
-      <Grid textAlign='center' verticalAlign='middle' centered='true' style={{ height: '100vh', width: '45vh' }}>
-        <Grid.Column>
-          <img src={fundbearLogo} alt="fundbear logo"></img>
-          <Input placeholder='Username' fluid size="big"/>
-          <br />
-          <Input placeholder='Password' fluid size="big" />
-          <br />
-          <Link to='/Crisis'>
-          <Button content='LOG IN' fluid size="big" secondary />
-          </Link>
-        </Grid.Column>
-      </Grid>
-=======
     <div className='gradientBackground'>
         <div className='whiteCardBackground'>
         <Grid className='gridFade' textAlign='center' verticalAlign='middle' centered='true'>
@@ -37,7 +22,6 @@ function Login() {
             </Grid.Column>
         </Grid>
         </div>
->>>>>>> 4e1f764f9001d9e75e3927244b50fd098ed35c28
     </div>
         
   );

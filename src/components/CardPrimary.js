@@ -3,14 +3,8 @@ import '../css/CardPrimary.css'
 import { Card, Image } from 'semantic-ui-react';
 
 function CardPrimary(props) {
-<<<<<<< HEAD
     function handleClick(e) { 
         console.log('Testing')
-=======
-    function handleClick(e) {
-        e.preventDefault();
-        console.log('The link was clicked.');
->>>>>>> 4e1f764f9001d9e75e3927244b50fd098ed35c28
     }
     return (
         <div className="cardContainer" onClick={handleClick}>

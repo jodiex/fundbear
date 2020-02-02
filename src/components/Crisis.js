@@ -1,11 +1,11 @@
 import React from 'react';
-import '../css/Crisis.css';
+import '../css/GridPage.css';
 import Header from './Header.js';
 import CardPrimary from './CardPrimary.js';
 import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import { render } from '@testing-library/react';
-import { json } from 'body-parser';
+// import { render } from '@testing-library/react';
+// import { json } from 'body-parser';
 
 function Crisis() {
   const fundbearLogo = 'images/fundbear_logo.png';
@@ -44,17 +44,6 @@ function Crisis() {
   ]
 
 
-
-
-  function fetchCrisis() {
-    fetch(`http://localhost:8080/filterProjects`)
-    .then(function(response){
-      console.log(response)
-      return response;
-    })
-  }
-
-
   let cardComponents = crises.map((row) => {
         return (
             <Grid.Row columns={3}>
@@ -83,13 +72,6 @@ function Crisis() {
         </Grid>
       </div>
     </div>
-    
-    
-    
-    
-    
-      
-   
   );
 }
 
