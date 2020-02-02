@@ -12,7 +12,7 @@ function Login() {
             <img src={fundbearLogo} alt="fundbear logo"></img>
             <Input placeholder='Username' fluid size='large'/>
             <br />
-            <Input placeholder='Password' fluid size='large'/>
+            <Input placeholder='Password' className='passwordInput' fluid size='large'/>
             <br />
             <Button content='LOG IN' fluid size="big" secondary />
             </Grid.Column>

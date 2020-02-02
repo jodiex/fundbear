@@ -34,3 +34,8 @@ Button:hover {
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+.passwordInput {
+    -webkit-text-security: disc;
+    text-security: disc;
+}

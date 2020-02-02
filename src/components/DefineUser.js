@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/DefineUser.css'
+import '../css/DefineUser.css';
 import { Button, Grid } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 
