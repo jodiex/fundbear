@@ -1,4 +1,4 @@
-#fundbear
+# fundbear
 
 fundbear is a web app that aims to bridge the gap between serious donors and organizations to provide immediate relief to natural disasters.
 
