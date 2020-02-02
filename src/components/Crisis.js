@@ -16,9 +16,9 @@ function Crisis() {
           "img": "/images/wildfire.jpg"
       },
       {
-        "crisisName": "Hurricane Dorian",
-        "country": "Bahamas, Puerto Rico",
-        "img": "/images/hurricane.jpg"
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
 
       },
       {
@@ -27,19 +27,19 @@ function Crisis() {
         "img": "/images/typhoon.jpg"
       }],
       [{
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Hurricane Dorian",
+        "country": "Bahamas, Puerto Rico",
+        "img": "/images/hurricane.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Earthquake",
+        "country": "Papua New Guinea",
+        "img": "/images/earthquake.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Nigerian Flood",
+        "country": "Nigeria",
+        "img": "/images/flood.jpg"
       }]
   ]
 
@@ -75,7 +75,7 @@ function Crisis() {
         <Header/>
       </div>
       <div className="titleContainer">
-        <h2>Current Crises</h2>
+        <h2>Select a current crisis:</h2>
         <br />
       </div>
       <div className="gridContainer">
@@ -83,14 +83,7 @@ function Crisis() {
             {cardComponents}
         </Grid>
       </div>
-    </div>
-    
-    
-    
-    
-    
-      
-   
+    </div>   
   );
 }
 
