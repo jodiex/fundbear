@@ -31,7 +31,7 @@ function Crisis() {
       },
       {
         "crisisName": "Earthquake",
-        "country": "Papau New Guinea",
+        "country": "Papua New Guinea",
         "img": "/images/earthquake.jpg"
       },
       {
