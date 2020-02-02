@@ -1,15 +1,14 @@
 import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 
-function CardPrimary() {
+function CardPrimary(props) {
     return (
-        <Card>
-            <Image src='/images/wildfire.jpg'></Image>
+        <Card style={{height: '270px'}}>
+            <Image src={props.img}></Image>
             <Card.Content>
-                <Card.Header>Wildfires</Card.Header>
-                <Card.Meta>Created in September 2019</Card.Meta>
+                <Card.Header>{props.header}</Card.Header>
                 <Card.Description>
-                    Wildfires in Australia
+                    {props.description}
                 </Card.Description>
             </Card.Content>          
         </Card>
