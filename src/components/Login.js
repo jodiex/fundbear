@@ -1,7 +1,7 @@
 import React from 'react';
-import '../css/Login.css'
+import '../css/Login.css';
+import { Link } from 'react-router-dom';
 import { Button, Grid, Input } from 'semantic-ui-react';
-import { Link } from "react-router-dom";
 
 function Login() {
   const fundbearLogo = 'images/fundbear_logo.png'

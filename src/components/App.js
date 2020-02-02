@@ -4,7 +4,7 @@ import Login from './Login'
 import CardPrimary from './CardPrimary'
 import CardSecondary from './CardSecondary'
 import Crisis from './Crisis'
-import ModalDonor from './ModalDonor'
+
 
 import '../css/App.css'
 import {
@@ -16,6 +16,7 @@ import {
 import { Button } from 'semantic-ui-react';
 import ItemsDonor from './ItemsDonor';
 import ProjectsDonor from './ProjectsDonor';
+import axios from 'axios';
 
 function App() {
   return (
@@ -27,8 +28,6 @@ function App() {
           <Route path='/card' component={CardSecondary} />
           <Route path='/current-crises' component={Crisis} />
           <Route path='/items-donor' component={ItemsDonor} />
-          <Route path='/items-donor' component={ItemsDonor} />
-          <Route path='/modal-donor' component={ModalDonor} />
           <Route path='/projects-donor' component={ProjectsDonor} />
     
       

@@ -2,17 +2,17 @@ import React from 'react';
 import { Card, Image, Progress } from 'semantic-ui-react';
 
 
-function CardSecondary() {
+function CardSecondary(props) {
     return (
         <Card style={{height: '310px'}}>
-            <Image src='/images/wildfire.jpg'></Image>
+            <Image src={props.img}></Image>
             <Card.Content>
-                <Card.Header>Surgical Masks</Card.Header>
+                <Card.Header>{props.header}</Card.Header>
                 <Card.Description>
-                    Wuhan Coronavirus Outbreak
+                    {props.description}
                 </Card.Description>
-                <Card.Meta>2000 of 5000</Card.Meta>
-                <Progress percent={40} color='blue' />
+                <Card.Meta>{props.currentQuantity} of {props.maxQuantity}</Card.Meta>
+                <Progress percent={(props.currentQuantity/props.maxQuantity)*100} color='blue' />
             </Card.Content>          
         </Card>
 
