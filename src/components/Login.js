@@ -13,9 +13,9 @@ function Login() {
           <br />
           <Input placeholder='Password' fluid size="big" />
           <br />
-          <Link to='/'
+          <Link to='/'>
           <Button content='LOG IN' fluid size="big" secondary />
-          
+          </Link>
         </Grid.Column>
       </Grid>
     </div>
