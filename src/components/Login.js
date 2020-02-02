@@ -1,5 +1,6 @@
 import React from 'react';
-import '../css/Login.css'
+import '../css/Login.css';
+import { Link } from 'react-router-dom';
 import { Button, Grid, Input } from 'semantic-ui-react';
 
 function Login() {
@@ -13,7 +14,7 @@ function Login() {
           <br />
           <Input placeholder='Password' fluid size="big" />
           <br />
-          <Link to='/'>
+          <Link to='/Crisis'>
           <Button content='LOG IN' fluid size="big" secondary />
           </Link>
         </Grid.Column>

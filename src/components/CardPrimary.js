@@ -2,6 +2,9 @@ import React from 'react';
 import { Card, Image } from 'semantic-ui-react';
 
 function CardPrimary(props) {
+    function handleClick(e) { 
+        console.log('Testing')
+    }
     return (
         <Card style={{height: '270px'}}>
             <Image src={props.img}></Image>
