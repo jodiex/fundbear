@@ -8,7 +8,7 @@ function Header() {
   return (
     <div className='headerContainerInternal'>
       <img src={fundbearLogo} alt="fundbear logo"></img>
-      <Link to='/login'>
+      <Link to='/'>
         <p>Log Out</p>
       </Link>
     </div>
