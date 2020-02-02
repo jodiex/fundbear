@@ -1,9 +1,8 @@
-.headerContainer {
+.headerContainerInternal {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
-    margin-top: 1.5em;
+    width: 1100px;
 }
 
 p {
