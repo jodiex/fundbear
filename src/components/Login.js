@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/Login.css'
 import { Button, Grid, Input } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 
 function Login() {
   const fundbearLogo = 'images/fundbear_logo.png'
@@ -14,7 +15,9 @@ function Login() {
             <br />
             <Input placeholder='Password' className='passwordInput' fluid size='large'/>
             <br />
-            <Button content='LOG IN' fluid size="big" secondary />
+            <Link to='/current-crises'>
+              <Button content='LOG IN' fluid size="big" secondary />
+            </Link>
             </Grid.Column>
         </Grid>
         </div>

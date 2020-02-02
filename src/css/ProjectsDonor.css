@@ -39,11 +39,12 @@ h2 {
     width: 100%;
 }
 
+
 .gridContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 3em;
+    padding-left: 2.5em;
 
 }
 

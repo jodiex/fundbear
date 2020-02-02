@@ -12,27 +12,33 @@ function Crisis() {
       [{
           "crisisName": "Australian Wildfire",
           "country": "Australia",
-          "img": ""
+          "img": "/images/wildfire.jpg"
       },
       {
-        "crisisName": "Hurricane Dorian",
-        "country": "Bahamas, Puerto Rico"
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
+
       },
       {
         "crisisName": "Typhoon Hagibis",
-        "country": "Japan"
+        "country": "Japan",
+        "img": "/images/typhoon.jpg"
       }],
       [{
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "crisisName": "Hurricane Dorian",
+        "country": "Bahamas, Puerto Rico",
+        "img": "/images/hurricane.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "crisisName": "Earthquake",
+        "country": "Papua New Guinea",
+        "img": "/images/earthquake.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "crisisName": "Nigerian Flood",
+        "country": "Nigeria",
+        "img": "/images/flood.jpg"
       }]
   ]
   let cardComponents = crises.map((row) => {
@@ -41,7 +47,7 @@ function Crisis() {
                 {row.map((item) => {
                     return (
                         <Grid.Column>
-                            <CardPrimary header={item["crisisName"]} description={item["country"]}/>
+                            <CardPrimary header={item["crisisName"]} description={item["country"]} img={item["img"]}/>
                         </Grid.Column>
                     )
                 })}
@@ -54,7 +60,7 @@ function Crisis() {
         <Header/>
       </div>
       <div className="titleContainer">
-        <h2>Current Crises</h2>
+        <h2>Select a current crisis:</h2>
         <br />
       </div>
       <div className="gridContainer">
