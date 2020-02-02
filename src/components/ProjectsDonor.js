@@ -6,7 +6,7 @@ import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
 import { render } from '@testing-library/react';
 
-function ProjectsDonor(crisis) {
+function ProjectsDonor() {
   const fundbearLogo = 'images/fundbear_logo.png';
     const projects = [] //Michelle
   let cardComponents = projects.map((row) => {
