@@ -15,10 +15,9 @@ function Crisis() {
           "img": "/images/wildfire.jpg"
       },
       {
-        "crisisName": "Hurricane Dorian",
-        "country": "Bahamas, Puerto Rico",
-        "img": "/images/hurricane.jpg"
-
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
       },
       {
         "crisisName": "Typhoon Hagibis",
@@ -26,19 +25,19 @@ function Crisis() {
         "img": "/images/typhoon.jpg"
       }],
       [{
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Hurricane Dorian",
+        "country": "Bahamas, Puerto Rico",
+        "img": "/images/hurricane.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Earthquake",
+        "country": "Papau New Guinea",
+        "img": "/images/earthquake.jpg"
       },
       {
-        "crisisName": "Coronavirus Outbreak",
-        "country": "China",
-        "img": "/images/coronavirus.jpg"
+        "crisisName": "Nigerian Flood",
+        "country": "Nigeria",
+        "img": "/images/flood.jpg"
       }]
   ]
 
