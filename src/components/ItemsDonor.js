@@ -33,8 +33,8 @@ function ItemsDonor() {
       {
         "projectName":"Help Victims of the Wildfires",
         "country": "Australia",
-        "img": "/images/sandbag.png",
-        "itemName": "Sandbags",
+        "img": "/images/first.png",
+        "itemName": "First Aid Kit",
         "itemImg": "https://www.homestratosphere.com/wp-content/uploads/2018/11/burlap-sacks-nov122018-min.jpg",
         "maxQuantity": 5000,
         "currentQuantity": 3202
