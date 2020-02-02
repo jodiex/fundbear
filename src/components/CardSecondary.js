@@ -5,7 +5,7 @@ import { Card, Image, Progress } from 'semantic-ui-react';
 function CardSecondary(props) {
     return (
         <Card style={{height: '310px'}}>
-            <Image src='/images/wildfire.jpg'></Image>
+            <Image src={props.img}></Image>
             <Card.Content>
                 <Card.Header>{props.header}</Card.Header>
                 <Card.Description>

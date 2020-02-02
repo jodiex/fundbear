@@ -1,23 +1,42 @@
 import React from 'react';
 import '../css/CardPrimary.css'
 import { Card, Image } from 'semantic-ui-react';
+import { useState } from 'react'
+import axios from 'axios';
+import {Link, useHistory, BrowserRouter} from 'react-router-dom';
+import CardSecondary from './CardSecondary'
+import ItemsDonor from './ItemsDonor';
+
 
 function CardPrimary(props) {
-    function handleClick(e) { 
-        console.log('Testing')
+    const [data, setData] = useState(null)
+    const apiURL = "http://localhost:8080/filterProjects";
+    let history = useHistory();
+
+    function fetchData() {
+        const response = axios.get(apiURL);
+        setData(response.data) 
+    }
+
+    const handleClick = () => {
+        history.push('/items-donor')
+        // <Route path='/items-donor' component={ItemsDonor} />
     }
     return (
+        <BrowserRouter>
         <div className="cardContainer" onClick={handleClick}>
+                <Link to ='/ItemsDonor'></Link>
             <Card style={{height: '270px'}}>
                 <Image src={props.img}></Image>
                 <Card.Content>
                     <Card.Header>{props.header}</Card.Header>
-                    <Card.Description>
-                        {props.description}
-                    </Card.Description>
+                <Card.Description>
+                {props.description}
+                </Card.Description>
                 </Card.Content>          
             </Card>
         </div>
+        </BrowserRouter>
     );
 }
 

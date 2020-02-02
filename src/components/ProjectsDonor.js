@@ -4,11 +4,20 @@ import Header from './Header.js';
 import CardPrimary from './CardPrimary.js';
 import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import { render } from '@testing-library/react';
+import {useState} from 'react'; 
+import axios from 'axios';
 
 function ProjectsDonor() {
   const fundbearLogo = 'images/fundbear_logo.png';
-    const projects = [] //Michelle
+  const url = "http://localhost:8080/filterProjects/filterCrisis";  
+  const [projects, setProject] = useState(null)
+  
+  //call this to fetch
+  const fetchData = async () => {
+    const response = await axios.get(url)
+    setProject(response.data) 
+  }
+
   let cardComponents = projects.map((row) => {
         return (
             <Grid.Row columns={3}>
