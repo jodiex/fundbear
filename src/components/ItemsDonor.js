@@ -1,43 +1,91 @@
 import React from 'react';
-import '../css/Grid.css';
-import CardPrimary from './CardPrimary.js';
+import '../css/GridPage.css';
 import Header from './Header.js';
-import { Button, Grid } from 'semantic-ui-react';
-import testItemsData from '../testItemsData.js'
+import CardPrimary from './CardPrimary';
+import { Button, Grid, Modal, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import { render } from '@testing-library/react';
+
+
 
 function ItemsDonor() {
-  const fundbearLogo = 'images/fundbear_logo.png'
-  const testItems = testItemsData
-  let cardComponents = testItems.map(item => {
-    return (
-        <CardPrimary 
-         key={item.id}
-         header={item.itemName}
-         description={item.price}/>
+  const fundbearLogo = 'images/fundbear_logo.png';
+  const dummyData = [
+      [{
+          "crisisName": "Australian Wildfire",
+          "country": "Australia",
+          "img": ""
+      },
+      {
+        "crisisName": "Hurricane Dorian",
+        "country": "Bahamas, Puerto Rico"
+      },
+      {
+        "crisisName": "Typhoon Hagibis",
+        "country": "Japan"
+      }],
+      [{
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China"
+      },
+      {
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China"
+      },
+      {
+        "crisisName": "Coronavirus Outbreak",
+        "country": "China"
+      }]
+  ]
+  let cardComponents = dummyData.map((row) => {
+        return (
+            <Grid.Row columns={3}>
+                {row.map((item) => {
+                    return (
+                        <Grid.Column>
+                          <Modal trigger={<CardPrimary header={item["crisisName"]} 
+                                           description={item["country"]} 
+                                           currentQuantity={2000}
+                                           maxQuantity={5000}/>}>
+                            <Modal.Header>Select a Photo</Modal.Header>
+                            <Modal.Content image>
+                              <Image wrapped size='medium' src='https://react.semantic-ui.com/images/avatar/large/rachel.png' />
+                              <Modal.Description>
+                                <Modal.Header>Default Profile Image</Modal.Header>
+                                <p>
+                                  We've found the following gravatar image associated with your e-mail
+                                  address.
+                                </p>
+                           
+                              </Modal.Description>
+                            </Modal.Content>
+                          </Modal>
+                            
+                        </Grid.Column>
+                    )
+                })}
+            </Grid.Row>
+        );
+    });
 
-    )});
 
   return (
-    <div className="organizationContainer">
+    
+    <div className="gridPageContainer">
+      <div className="headerContainer">
         <Header/>
-        <div className="grid">
-        <h2>Organizations</h2>
+      </div>
+      <div className="titleContainer">
+        <h2>Here are items that are needed</h2>
+        <br />
+      </div>
+      <div className="gridContainer">
         <Grid>
-            <Grid.Row columns={testItemsData.size()}>
-                <Grid.Column>
-                    {cardComponents}
-                </Grid.Column>
-                
-            </Grid.Row>
+            {cardComponents}
         </Grid>
       </div>
     </div>
-  )
-    
-}
-    
 
+  );
+}
 
 export default ItemsDonor;

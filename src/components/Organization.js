@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/Grid.css';
+import '../css/GridPage.css';
 import CardPrimary from './CardPrimary.js';
 import Header from './Header.js';
 import { Button, Grid } from 'semantic-ui-react';

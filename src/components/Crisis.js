@@ -1,10 +1,10 @@
 import React from 'react';
-import '../css/Crisis.css';
+import '../css/GridPage.css';
 import Header from './Header.js';
 import CardPrimary from './CardPrimary.js';
 import { Button, Grid, Image } from 'semantic-ui-react';
 import { Link } from "react-router-dom";
-import { render } from '@testing-library/react';
+
 
 function Crisis() {
   const fundbearLogo = 'images/fundbear_logo.png';
@@ -63,13 +63,7 @@ function Crisis() {
         </Grid>
       </div>
     </div>
-    
-    
-    
-    
-    
-      
-   
+
   );
 }
 
