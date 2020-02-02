@@ -55,23 +55,29 @@ function Crisis() {
         );
     });
   return (
-    <div className="crisesContainer">
-    <div className="headerContainer">
+    <div className="gridPageContainer">
+      <div className="headerContainer">
         <Header/>
-    </div>
-    
-    <div className="titleContainer">
+      </div>
+      <div className="titleContainer">
         <h2>Current Crises</h2>
-    </div>
-    
-    <div className="gridContainer">
+        <br />
+      </div>
+      <div className="gridContainer">
         <Grid>
             {cardComponents}
         </Grid>
+      </div>
     </div>
-        </div>
+    
+    
+    
+    
+    
+      
    
   );
 }
 
 export default Crisis;
+

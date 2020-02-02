@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 function Header() {
   const fundbearLogo = 'images/fundbear_logo.png'
   return (
-    <div className="headerContainer">
+    <div className='headerContainerInternal'>
       <img src={fundbearLogo} alt="fundbear logo"></img>
       <Link to='/login'>
         <p>Log Out</p>

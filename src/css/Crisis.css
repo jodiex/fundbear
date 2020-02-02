@@ -14,9 +14,23 @@ h2 {
 }
 
 
-.crisesContainer {
+.gridPageContainer {
+    position: relative;
     display: flex;
+    width: 90%;
+    height: 100%;
     flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3%;
+    padding-top: 2%;
+}
+
+.headerContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
 }
 
 .titleContainer{
@@ -24,8 +38,15 @@ h2 {
     width: 100%;
 }
 
+h2 {
+    margin-left: 1em;
+}
+
 .gridContainer{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2em;
 
 }
 
