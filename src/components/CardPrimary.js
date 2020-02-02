@@ -18,13 +18,13 @@ function CardPrimary(props) {
         setData(response.data) 
     }
 
-    const handleClick = (link) => {
-        history.push(link);
+    const handleClick = () => {
+        history.push(props.link);
         // <Route path='/items-donor' component={ItemsDonor} />
     }
     return (
         <BrowserRouter>
-        <div className="cardContainer" onClick={handleClick(props.link)}>
+        <div className="cardContainer" onClick={handleClick}>
             <Card style={{height: '270px'}}>
                 <Image src={props.img}></Image>
                 <Card.Content>

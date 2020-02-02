@@ -103,7 +103,7 @@ function ItemsDonor() {
         <Header/>
       </div>
       <div className="titleContainer">
-        <h2>Items eeded for the Australian Wildfires</h2>
+        <h2>Items needed for the Australian Wildfires</h2>
         <br />
       </div>
       <div className="gridContainer">
