@@ -4,7 +4,7 @@ import { Card, Image } from 'semantic-ui-react';
 function CardPrimary(props) {
     return (
         <Card style={{height: '270px'}}>
-            <Image src='/images/wildfire.jpg'></Image>
+            <Image src={props.img}></Image>
             <Card.Content>
                 <Card.Header>{props.header}</Card.Header>
                 <Card.Description>

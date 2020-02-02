@@ -12,27 +12,33 @@ function Crisis() {
       [{
           "crisisName": "Australian Wildfire",
           "country": "Australia",
-          "img": ""
+          "img": "/images/wildfire.jpg"
       },
       {
         "crisisName": "Hurricane Dorian",
-        "country": "Bahamas, Puerto Rico"
+        "country": "Bahamas, Puerto Rico",
+        "img": "/images/hurricane.jpg"
+
       },
       {
         "crisisName": "Typhoon Hagibis",
-        "country": "Japan"
+        "country": "Japan",
+        "img": "/images/typhoon.jpg"
       }],
       [{
         "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
       },
       {
         "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
       },
       {
         "crisisName": "Coronavirus Outbreak",
-        "country": "China"
+        "country": "China",
+        "img": "/images/coronavirus.jpg"
       }]
   ]
   let cardComponents = crises.map((row) => {
@@ -41,7 +47,7 @@ function Crisis() {
                 {row.map((item) => {
                     return (
                         <Grid.Column>
-                            <CardPrimary header={item["crisisName"]} description={item["country"]}/>
+                            <CardPrimary header={item["crisisName"]} description={item["country"]} img={item["img"]}/>
                         </Grid.Column>
                     )
                 })}
