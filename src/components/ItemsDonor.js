@@ -13,7 +13,7 @@ function ItemsDonor() {
   const fundbearLogo = 'images/fundbear_logo.png'
   const dummyData = [
       [{
-          "crisisName": "Australian Wildfire",
+          "projectName":"Help Victims of the Wildfires",
           "country": "Australia",
           "img": "/images/wildfire.jpg",
           "itemName": "Water Bottles",
@@ -22,7 +22,7 @@ function ItemsDonor() {
           "currentQuantity": 2541
       },
       {
-        "crisisName": "Australian Wildfire",
+        "projectName":"Help Victims of the Wildfires",
         "country": "Australia",
         "img": "/images/wildfire.jpg",
         "itemName": "Generators",
@@ -31,7 +31,7 @@ function ItemsDonor() {
         "currentQuantity": 18
       },
       {
-        "crisisName": "Australian Wildfire",
+        "projectName":"Help Victims of the Wildfires",
         "country": "Australia",
         "img": "/images/wildfire.jpg",
         "itemName": "Sandbags",
@@ -40,7 +40,7 @@ function ItemsDonor() {
         "currentQuantity": 3202
       }],
       [{
-        "crisisName": "Australian Wildfire",
+        "projectName":"Help Victims of the Wildfires",
         "country": "Australia",
         "img": "/images/wildfire.jpg",
         "itemName": "Blankets",
@@ -103,7 +103,7 @@ function ItemsDonor() {
         <Header/>
       </div>
       <div className="titleContainer">
-        <h2>Items needed for the Australian Wildfires</h2>
+        <h2>Items needed for {dummyData[0][1]["projectName"]}</h2>
         <br />
       </div>
       <div className="gridContainer">
