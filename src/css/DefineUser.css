@@ -14,3 +14,32 @@ Button:hover {
     color: white !important;
     transition: background-color 0.6s ease !important;
 }
+
+.gradientBackground {
+    background: linear-gradient(180deg, #5477D2 0%, rgba(118, 191, 196, 0.58) 100%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whiteCardBackground {
+    background: white;
+    padding: 2%;
+    border-radius: 15px;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    min-width: 420px;
+}
+
+.gridFade{
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+

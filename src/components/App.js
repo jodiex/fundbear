@@ -3,6 +3,7 @@ import DefineUser from './DefineUser'
 import Login from './Login'
 import Organization from './Organization'
 import CardPrimary from './CardPrimary'
+import CardSecondary from './CardSecondary'
 import '../css/App.css'
 import {
   BrowserRouter as Router,
@@ -20,7 +21,7 @@ function App() {
           <Route path='/' exact component={DefineUser}/>
           <Route path='/login' component={Login} />
           <Route path='/organization' component={Organization} />
-          <Route path='/card' component={CardPrimary} />
+          <Route path='/card' component={CardSecondary} />
 
       
         </Switch>
