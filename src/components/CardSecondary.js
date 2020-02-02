@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, Image, Progress } from 'semantic-ui-react';
 
+
 function CardSecondary() {
     return (
         <Card style={{height: '310px'}}>
